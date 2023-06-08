@@ -1,0 +1,37 @@
+.video-widget {
+    position: relative;
+    width: 100%;
+
+    .widget-video {
+        width: 100%;
+    }
+
+    .widget-controls {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+
+        button {
+            width: 40px;
+            height: 40px;
+            border: none;
+            background: none;
+            color: #fff;
+            font-size: 20px;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .play-pause-button:before {
+            content: '\e61c'; // Használj megfelelő Luma/Blank ikon betűkészletet a lejátszás/szünet gombhoz
+        }
+
+        .mute-unmute-button:before {
+            content: '\e609'; // Használj megfelelő Luma/Blank ikon betűkészletet a némítás/hang bekapcsolása gombhoz
+        }
+    }
+}
